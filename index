@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sebastien Dills — PM Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:#fff;color:#111;font-family:'DM Mono',monospace;font-size:13px;line-height:1.7}
+
+    nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;border-bottom:1px solid #eee;position:sticky;top:0;background:#fff;z-index:99}
+    .logo{font-size:14px;font-weight:500;color:#111}
+    .logo span{color:#e63030}
+    .nav-links{display:flex;gap:2rem}
+    .nav-links a{font-size:11px;color:#999;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;transition:color 0.15s}
+    .nav-links a:hover{color:#111}
+
+    .hero{padding:4rem 2rem 3rem;border-bottom:1px solid #eee}
+    .hero-name{font-size:clamp(2rem,5vw,3.5rem);font-weight:500;color:#111;line-height:1.1;margin-bottom:0.5rem}
+    .hero-name span{color:#e63030}
+    .hero-sub{font-size:12px;color:#999;margin-bottom:2rem}
+    .hero-link{font-size:11px;color:#999;border:1px solid #ddd;padding:6px 14px;text-decoration:none;transition:all 0.15s;display:inline-block}
+    .hero-link:hover{border-color:#e63030;color:#e63030}
+
+    section{padding:3rem 2rem;border-bottom:1px solid #eee}
+    .s-label{font-size:10px;color:#ccc;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:1.5rem}
+
+    .tl-row{display:grid;grid-template-columns:110px 1fr;gap:2rem;padding:1rem 0;border-top:1px solid #f2f2f2}
+    .tl-row:first-of-type{border-top:none}
+    .tl-period{font-size:11px;color:#bbb}
+    .tl-name{font-size:13px;color:#555}
+    .tl-name b{color:#111;font-weight:500}
+    .tl-sub{font-size:11px;color:#aaa;margin-top:3px}
+    .edu-divider{font-size:10px;color:#ccc;letter-spacing:0.18em;text-transform:uppercase;padding:1.5rem 0 0.5rem;border-top:1px solid #f2f2f2;margin-top:0.5rem}
+
+    .proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:#eee;border:1px solid #eee}
+    .proj-card{background:#fff;padding:1.75rem;transition:background 0.15s}
+    .proj-card:hover{background:#fafafa}
+    .proj-card.featured{border-top:2px solid #e63030}
+    .proj-top{display:flex;justify-content:space-between;margin-bottom:1rem}
+    .proj-num{font-size:10px;color:#ddd}
+    .proj-type{font-size:10px;color:#bbb;border:1px solid #eee;padding:2px 8px;letter-spacing:0.08em;text-transform:uppercase}
+    .proj-type.ai{color:#e63030;border-color:#fdd}
+    .proj-title{font-size:13px;font-weight:500;color:#111;margin-bottom:0.5rem}
+    .proj-desc{font-size:11px;color:#aaa;line-height:1.7;margin-bottom:1rem}
+    .proj-stack{display:flex;flex-wrap:wrap;gap:4px}
+    .stack-tag{font-size:10px;color:#ccc;border:1px solid #eee;padding:2px 7px}
+
+    footer{padding:1rem 2rem;text-align:right}
+    footer span{font-size:11px;color:#ddd}
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">SD<span>.</span></div>
+    <div class="nav-links">
+      <a href="#exp">Experience</a>
+      <a href="#projects">Projects</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-name">Sebastien <span>Dills</span></div>
+    <div class="hero-sub">Product Manager · Data & Platform · Brooklyn, NY</div>
+    <a class="hero-link" href="https://linkedin.com/in/YOUR-HANDLE" target="_blank">LinkedIn ↗</a>
+  </div>
+
+  <section id="exp">
+    <div class="s-label">Experience</div>
+    <div class="tl-row">
+      <div class="tl-period">2024 — Now</div>
+      <div>
+        <div class="tl-name"><b>Capital One</b> · Product Manager</div>
+        <div class="tl-sub">Cloud-native messaging and payment systems. Event-driven architecture, compliance, platform reliability.</div>
+      </div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-period">2022 — 2024</div>
+      <div>
+        <div class="tl-name"><b>Mastercard</b> · Associate PM</div>
+        <div class="tl-sub">Data & Services. Built a data warehouse product and launched the team's first commercial analytics use case.</div>
+      </div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-period">Summer 2021</div>
+      <div>
+        <div class="tl-name"><b>NetApp</b> · PM Intern</div>
+        <div class="tl-sub">Dynamic pricing tool for IaaS offerings. Quote-to-cash flow automation.</div>
+      </div>
+    </div>
+    <div class="edu-divider">Education</div>
+    <div class="tl-row" style="border-top:none">
+      <div class="tl-period">2018 — 2022</div>
+      <div>
+        <div class="tl-name"><b>UCLA</b> · B.A. Economics</div>
+        <div class="tl-sub">Digital Humanities Minor</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="s-label">Projects</div>
+    <div class="proj-grid">
+      <div class="proj-card featured">
+        <div class="proj-top">
+          <div class="proj-num">01</div>
+          <div class="proj-type ai">Vibe coded</div>
+        </div>
+        <div class="proj-title">PM Portfolio Site</div>
+        <div class="proj-desc">This site. Built with Claude as a co-pilot — designed, iterated, and shipped entirely through AI-assisted development.</div>
+        <div class="proj-stack">
+          <span class="stack-tag">Claude</span>
+          <span class="stack-tag">HTML/CSS</span>
+          <span class="stack-tag">Vibe coding</span>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-top">
+          <div class="proj-num">02</div>
+          <div class="proj-type ai">Vibe coded</div>
+        </div>
+        <div class="proj-title">Project Two</div>
+        <div class="proj-desc">Short description of what it does and why you built it.</div>
+        <div class="proj-stack">
+          <span class="stack-tag">Tool</span>
+          <span class="stack-tag">Claude</span>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-top">
+          <div class="proj-num">03</div>
+          <div class="proj-type ai">Vibe coded</div>
+        </div>
+        <div class="proj-title">Project Three</div>
+        <div class="proj-desc">Short description of what it does and why you built it.</div>
+        <div class="proj-stack">
+          <span class="stack-tag">Tool</span>
+          <span class="stack-tag">Claude</span>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-top">
+          <div class="proj-num">04</div>
+          <div class="proj-type">Work</div>
+        </div>
+        <div class="proj-title">Event-Driven Messaging Platform</div>
+        <div class="proj-desc">Cloud-native SMS/Email platform at Capital One — replaced legacy batch processing with event-driven architecture.</div>
+        <div class="proj-stack">
+          <span class="stack-tag">AWS</span>
+          <span class="stack-tag">Snowflake</span>
+          <span class="stack-tag">DMN/DRD</span>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-top">
+          <div class="proj-num">05</div>
+          <div class="proj-type">Work</div>
+        </div>
+        <div class="proj-title">Data Warehouse & Analytics Dashboard</div>
+        <div class="proj-desc">PostgreSQL warehouse at Mastercard unifying multiple data sources, plus the product's first commercial analytics dashboard.</div>
+        <div class="proj-stack">
+          <span class="stack-tag">PostgreSQL</span>
+          <span class="stack-tag">Tableau</span>
+          <span class="stack-tag">0→1</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer><span>2026</span></footer>
+
+</body>
+</html>
